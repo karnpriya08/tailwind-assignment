@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TA home page</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+    <header>
+        <!-- top nav -->
+        <div class="">
+            <nav id="topnav" class=" p-5 h-14 text-white" style="background-color: #64ac34;">
+                <div class="flex flex-row md:justify-start ">
+                    <p class="hidden font-mono md:flex">Call Us Now: 555 376 7872 </p>
+                    <!-- logo -->
+                    <div class="flex flex-row justify-endgap-3 md:ml-auto gap-3 sm:justify-start">
+                        <a class="flex h-5 w-5 hover:scale-150 " href="https://www.facebook.com" target="_blank"><img
+                                src="./Images/fb.png" alt="facebook"></a>
+                        <a class="flex h-5 w-5  hover:scale-150" href="https://x.com/?lang=en" target="_blank"><img
+                                src="./Images/twitter.png" alt="twitter"></a>
+                        <a class="flex h-5 w-5 hover:scale-150" href="https://in.pinterest.com" target="_blank"><img
+                                src="./Images/pinterest.png" alt="pinterest"></a>
+                        <a class="flex 5 w-5 hover:scale-150" href="https://www.instagram.com" target="_blank"><img
+                                src="./Images/insta.png" alt="instagram"></a>
+                    </div>
+            </nav>
+        </div>
+        <!-- nav bar -->
+        <div class="py-7">
+            <nav class="pl-5 bg-white  w-full flow-root md:container">
+                <div class="md: flex md:flex-row md:justify-evenly md:w-full lg:block">
+                    <div class="flex items-center justify-center gap-x-0.5">
+                        <!-- logo -->
+                        <img src="./Images/logo.png" class="h-28 w-80 md:h-15 " alt="Logo" />
+                    </div>
+                    <br>
+                    <div class="mx-auto mt-3 flex justify-evenly items-center w-[92%]">
+                        <div
+                            class="nav-links duration-500 md:static md:min-h-fit md:w-auto absolute bg-white min-h-[40vh] left-2 top-[-100%] w-full flex items-center">
+                            <!-- lnavigation pages -->
+                            <ul class="flex md:flex-row flex-col md:items-center md:gap-[8vw] gap-8">
+                                <li class="">
+                                    <a href="./index.html"
+                                        class=" text-yellow-400 underline hover:text-yellow-400 hover:underline">HOME</a>
+                                </li>
+                                <li class="">
+                                    <a href="./ABOUT.html" class=" hover:text-yellow-400 hover:underline">ABOUT</a>
+                                </li>
+                                <li class="">
+                                    <a href="./contact.html" class=" hover:text-yellow-400 hover:underline">CONTACT
+                                        US</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- icon -->
+                    <div class="flex items-center gap-4">
+                        <ion-icon onclick="ontogglemenu(this)" name="reorder-four"
+                            class="text-8xl text-yellow-400 cursor-pointer  md:hidden"></ion-icon>
+                    </div>
+                </div>
+        </div>
+        </nav>
+        <!-- header closing -->
+    </header>
+
+    <main>
+        <!-- section 1 carousel -->
+        <div class="my-0 ">
+            <div class="bg-cover md:h-full lg:h-full text-center text-white "
+                style="background-image: url(./Images/img1.jpg);">
+                <div class=" p-5 ">
+                    <h1 class="font-extrabold text-4xl"> GARDEN CARE
+                        <span class="block">is our true</span>
+                        passion!
+                    </h1>
+                    <h3 class="font-medium text-xl">SO WHENEVER YOU JUST FEEL YOU NEED
+                        <span class="block">A PROFESSIONAL HELPING HAND AT</span>
+                        YOUR GARDEN, CALL US UP!
+                    </h3>
+                    <button class="border rounded-full px-10 py-3 m-2 text-xs text-white text-center "
+                        style="background-color: transparent;">FIND OUT MORE</button>
+                    <br>
+                    <br>
+                    <input style="background-color: #6f7175;" type="radio" id="html" name="img1" value="img1">
+                    <input type="radio" id="html" name="img2" value="img2">
+                    <input type="radio" id="html" name="img3" value="img3">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- section 2 options -->
+        <div class="flex flex-wrap lg:h-52 ">
+            <div
+                class="w-full md:w-1/3 p-10  md:flex-wrap  bg-yellow-500 text-center lg:text-base text-3xl cursor-pointer">
+                <img class="mx-auto mb-3" src="./Images/img4.png" alt="image" width="40vW">
+                <h3>BEST PRACTCING</h3>
+            </div>
+            <div
+                class="w-full md:w-1/3 p-10 md:flex-wrap md:p-6 bg-yellow-400 text-center lg:text-black text-white  lg:text-base text-3xl cursor-pointer">
+                <img class="mx-auto mb-3 mt-7" src="./Images/img5.png" alt="image" width="40vW">
+                <h3>FIRST PACE</h3>
+            </div>
+            <div
+                class="w-full md:w-1/3 p-10 p md:flex-wrap md:p-6 bg-yellow-300 text-center lg:text-black text-white  lg:text-base text-3xl cursor-pointer">
+                <img class="mx-auto mb-3 mt-7" src="./Images/img6.png" alt="image" width="40vW">
+                <h3>RANGE OF SERVICES</h3>
+            </div>
+
+        </div>
+        <!-- section 3 -->
+        <div>
+            <div class="bg-cover bg-center h-auto w-auto " style="background-image: url(./Images/img10.jpg);">
+
+                <!-- flex-1 -->
+                <div
+                    class="flex lg:flex-row flex-wrap justify-center text-center md:flex-wrap md:flex flex-col-reverse ">
+                    <div class="hidden lg:flex w-1/2 md:w-1/2   md:flex-wrap  bg-white">
+                        <img src="./Images/img10-1.png" alt="image" width="75%">
+                    </div>
+                    <!-- flex-2 -->
+                    <div class="w-full md:w-1/2 lg:p-6 md:flex-wrap p-6 bg-white">
+                        <section class="container my-10 mx-auto text-start space-y-10 ">
+                            <h1 class="text-4xl font-black ">Why Energico?</h1>
+                            <h4 class="text-gray-700">WELCOME TO THE TOP RATED EXTERIOR DESIGN
+                                COMPANY</h4>
+                            <p class=" my-8 text-gray-700">After years of practical (both personal and
+                                work-related) experience at
+                                hand, our team of passionate gardeners is your only option! </p>
+                            <br>
+                            <!-- button -->
+                            <button
+                                class="border rounded-full px-10 py-3 m-2 text-SM bg-yellow-500 text-white text-center">FIND
+                                OUT MORE</button>
+                        </section>
+                    </div>
+
+                </div>
+                <!-- section 4 -->
+                <div>
+                    <div class="bg-cover bg-center h-auto w-auto " style="background-image: url(./Images/img11.jpg);">
+                        <div class="mx-5 p-8 font-bold font-mono">
+                            <br>
+                            <h1 class="text-4xl text-yellow-400 ">CREATE</h1>
+                            <h4 class="text-white text-3xl">The Perfect Garden!</h4>
+                            <br>
+                            <!-- button -->
+                            <button
+                                class="border rounded-full  border-green-500  font-medium px-10 py-3  text-SM text-white text-center"
+                                style="background-color: #64ac34;">FIND OUT MORE</button>
+                        </div>
+                    </div>
+
+                    <!-- section 5 -->
+                    <div>
+                        <div class="bg-cover bg-center h-96 " style="background-image: url(./Images/img12.jpg);">
+                            <div class="p-6">
+                                <h1 class="text-4xl my-3 pt-7 font-black">Perform to the
+                                    <span class="block"></span>Highest Standards
+                                </h1>
+                                <p class="text-xl my-5 text-gray-800">With all kinds of garden design/care,
+                                    <span class="block">lawn & plants in our range, we’re your</span>
+                                    natural choice!
+                                </p>
+                                <!-- button -->
+                                <button
+                                    class="border  border-gray-800 rounded-full px-10 py-3 m-2 text-sm text-center bg-white ">GET
+                                    A QUOTE</button>
+                                <br>
+                            </div>
+                        </div>
+                        <!-- section 6 grid our advantage -->
+                        <div class=" mx-2 ">
+                            <section class="text-center bg-gray-100 lg:p-10 ">
+                                <br>
+                                <br>
+                                <!-- heading -->
+                                <h1 class="text-4xl font-extrabold">Our Advantages</h1>
+
+                                <div class="lg:grid lg:grid-cols-3 lg:grid-rows-2  md:grid md:grid-cols-1 gap-10 ">
+                                    <!-- card 1 -->
+                                    <div>
+                                        <img class="mx-auto w-10 m-2" src="./Images/img13.png" alt="logo">
+                                        <h3 class="text-2xl font-semibold" style="color: #64ac34;">CREATIVE IDEAS</h3>
+                                        <p class="lg:w-full w-1/2 text-center lg:ms-1 ms-24 ">Serving everyone from
+                                            household owners to hotels and
+                                            office, we make sure to provide a
+                                            truly full-cycle range of exterior
+                                            design, landscaping, and exterior
+                                            remodeling services!</p>
+                                    </div>
+                                    <!-- card 2 -->
+                                    <div>
+                                        <img class="mx-auto w-10 m-2" src="./Images/img15.png" alt="logo">
+                                        <h3 class="text-2xl font-semibold" style="color: #64ac34;">DECORATING</h3>
+                                        <p class="lg:w-full w-1/2 text-center lg:ms-1 ms-24 p-1">It does not really
+                                            matter is it the
+                                            Christmas time of the year or
+                                            not, priming your house with
+                                            some decorative elements or
+                                            masonry should not and is not
+                                            a seasonal fad!</p>
+                                    </div>
+                                    <!-- card 3 -->
+                                    <div>
+                                        <img class="mx-auto w-10 m-2" src="./Images/img17.png" alt="logo">
+                                        <h3 class="text-2xl font-semibold" style="color: #64ac34;">GARDEN DESIGN</h3>
+                                        <p class="lg:w-full w-1/2 text-center lg:ms-1 ms-24 p-1">Did you ever consider
+                                            giving
+                                            your house exterior or your
+                                            landscape a unique look,
+                                            implementing some superb
+                                            design ideas you’ve seen
+                                            before in the magazines?</p>
+                                    </div>
+                                    <!-- card 4 -->
+                                    <div>
+                                        <img class="mx-auto m-2 w-10" src="./Images/img14.png" alt="logo">
+                                        <h3 class="text-2xl font-semibold" style="color: #64ac34;">EXPERT ADVICE</h3>
+                                        <p class="lg:w-full w-1/2 text-center lg:ms-1 ms-24 p-1">Regardless of how crazy
+                                            your
+                                            exterior idea is, our team of
+                                            design-and-build experts will
+                                            easily turn it into reality! This is
+                                            true for projects of any scale!</p>
+                                    </div>
+                                    <!-- card 5 -->
+                                    <div>
+                                        <img class="mx-auto w-10 m-2" src="./Images/img16.png" alt="logo">
+                                        <h3 class="text-2xl font-semibold" style="color: #64ac34;">FRIENDLY PRICES</h3>
+                                        <p class="lg:w-full w-1/2 text-center lg:ms-1 ms-24 p-1">Having so much to
+                                            offer, we
+                                            also would love to give you the
+                                            best pricing on all of our
+                                            services! This means that as
+                                            compared to our market rivals,
+                                            our pricing is indeed fair and
+                                            friendly!</p>
+                                    </div>
+                                    <!-- card 6 -->
+                                    <div>
+                                        <img class="mx-auto w-10 m-2" src="./Images/img18.png" alt="logo">
+                                        <h3 class="text-2xl font-semibold" style="color: #64ac34;">SOFTSCAP</h3>
+                                        <p class="lg:w-full w-1/2 text-center lg:ms-1 ml-24">Softscaping is the
+                                            total
+                                            opposite for the hardscaping in
+                                            that it is neither as longlasting as the hard structure,
+                                            nor it is made of materials
+                                            that are durable.</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- section 7 grid blog-->
+
+                        <div>
+                            <section class="m-4 p-4">
+                                <h2 class="text-4xl font-extrabold text-center m-5">See the Tips & Tricks for Gardeners
+                                    on Our Blog!</h2>
+                                <!-- grids -->
+                                <div
+                                    class="lg:grid lg:grid-cols-2  md:grid md:grid-cols-1 lg:gap-10 text-black space-y-2">
+                                    <!-- card 1 -->
+                                    <div class=" mb-8">
+                                        <img src="./Images/img21.png" alt="image">
+                                    </div>
+                                    <!-- card 2 -->
+                                    <div class="lg:order-3 mt-1">
+                                        <h1 class="font-mono text-bold my-2">THE LESS CHEMICALS YOU USE, THE BETTER!
+                                        </h1>
+                                        <p class="text-base mb-8">So, we guess that if you're reading this blog entry
+                                            now, you are an avid gardener yourself, right?
+                                            Which in turn means that as we're talking about
+                                            the ways to compost your garden, the more you
+                                            should be listening</p>
+                                    </div>
+                                    <!-- card 3 -->
+                                    <div class="mb-8">
+                                        <img src="./Images/img20.png" alt="image">
+                                    </div>
+                                    <!-- card 4 -->
+                                    <div class="mt-3">
+                                        <h1 class="font-mono text-bold my-2">THE LESS CHEMICALS YOU USE, THE BETTER!
+                                        </h1>
+                                        <p class="text-base mb-2">So, we guess that if you're reading this blog entry
+                                            now, you are an avid gardener yourself, right?
+                                            Which in turn means that as we're talking about
+                                            the ways to compost your garden, the more you
+                                            should be listening.</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="py-12 bg-black text-white text-center">
+            <img src="./Images/footer-logo.png" class="mx-auto my-auto" alt="Logo" />
+            <!-- logos -->
+            <div class="my-4 flex flex-row justify-center">
+                <a class="flex h-1/3 w-1/12 hover:scale-125" href="https://www.facebook.com" target="_blank"><img
+                        src="./Images/footerfblogo.png" alt="facebook"></a>
+                <a class="flex h-1/3 w-1/12 hover:scale-125" href="https://x.com/?lang=en" target="_blank"><img
+                        src="./Images/footertwitterlogo.png" alt="twitter"></a>
+                <a class="flex h-1/3 w-1/12 hover:scale-125" href="https://in.pinterest.com" target="_blank"><img
+                        src="./Images/footerpinlogo.png" alt="pinterest"></a>
+                <a class="flex h-1/3 w-1/12 hover:scale-125" href="https://www.instagram.com" target="_blank"><img
+                        src="./Images/footerinstagram.png" alt="instagram"></a>
+            </div>
+            Energico © 2022 • Privacy Policy
+        </div>
+    </footer>
+    <!-- some javascript -->
+    <script>
+        const navlinks = document.querySelector('.nav-links')
+        function ontogglemenu(e) {
+            e.name = e.name === 'reorder-four' ? 'close' : 'reorder-four'
+            navlinks.classList.toggle('top-[10%]')
+        }
+    </script>
+    
+</body>
+
+</html>
+
+<!-- <button  type="submit" class="leftarrow bg-white text-sm p-2 absolute top-1/2 left-10 text-black " onclick="previousSlide()">prev</button>
+    <button class="rightarrow bg-white text-sm p-2 absolute top-1/2 left-80 text-black " onclick="nextSlide()">next</button>
+     -->
+<!-- <div class="slider w-full h-auto flex relative  overflow-hidden">
+        <img classs="" src="./Images/img1.jpg" alt="image" >
+        <img classs="" src="./Images/img2.jpg" alt="image" >
+        <img classs="" src="./Images/img3.jpg" alt="image" >
+    </div>
+      -->
+
+<!-- section 2 -->
